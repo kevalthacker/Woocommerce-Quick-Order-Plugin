@@ -23,8 +23,7 @@
    			$woocommerce->cart->add_to_cart($_POST['product_id_'.$i],$_POST['quantity'.$i]);		
    		}
    	}		
-   	$response_msg= '<div class="alert alert-success"><b>Success:</b> Product Added into Cart</div>';
-   	$response_msg= '<div class="woocommerce-message"><a href="https://northernsurgical.com/cart/" class="button wc-forward">View Cart</a> Products has been added to your cart.</div>';			
+   	$response_msg= '<div class="woocommerce-message"><a href="'.get_site_url().'/cart/" class="button wc-forward">View Cart</a> Products has been added to your cart.</div>';			
    	}
    }
    	?>
